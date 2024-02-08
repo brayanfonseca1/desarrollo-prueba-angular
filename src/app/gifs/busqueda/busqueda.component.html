@@ -1,0 +1,15 @@
+<h5>Buscar:</h5>
+
+<input #txtBuscar type="text" class="form-control"(keyup.enter)="buscar(txtBuscar.value)" placeholder="Buscar gifs...">
+
+       <button class="btn btn-primary btn-sm mt-2"(click)="buscar(txtBuscar.value)">Buscar</button>
+
+    
+       <div class="mt-3">
+       
+       <button class="btn btn-dark btn-sm" style="margin-right:4px;" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop" 
+       aria-controls="offcanvasWithBackdrop">Resultados Guardados</button>       
+       
+  
+       
+       </div>

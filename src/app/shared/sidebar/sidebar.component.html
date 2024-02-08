@@ -1,0 +1,16 @@
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop" aria-labelledby="offcanvasWithBackdropLabel">
+    <div class="offcanvas-header bg-dark">
+      <h5 class="offcanvas-title text-light" id="offcanvasWithBackdrop">AppGifs</h5>
+      <button type="button" class="btn-light btn-close text-reset text-light" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    
+    </div>
+    <div class="offcanvas-body bg-dark">
+      <hr class="text-light">
+      <div class="list-group list-reset" >
+  
+        <a style="cursor: pointer;" (click)="buscar(item)" class="list-group-item list-group-item-action" *ngFor="let item of historial">{{item | titlecase}}</a>
+  
+      </div>
+    </div>
+  </div>
+  
